@@ -68,15 +68,15 @@ export const dataset = {
       {
         label: 'Частково погоджуюсь',
         data: [8, 6, 8, 9, 12, 6, 8, 5, 7, 11, 10, 12],
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(255, 206, 5, 0.2)',
+        borderColor: 'rgba(255, 206, 86, 1)',
         borderWidth: 1,
       },
       {
         label: 'Погоджуюсь',
         data: [5, 8, 7, 15, 10, 17, 12, 12, 10, 9, 9, 11],
-        backgroundColor: 'rgba(255, 206, 5, 0.2)',
-        borderColor: 'rgba(255, 206, 86, 1)',
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
         borderWidth: 1,
       }
     ],
