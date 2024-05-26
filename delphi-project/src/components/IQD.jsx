@@ -38,7 +38,7 @@ const calculateIQD = (answers) => {
   return (q3 - q1) / 2;
 };
 
-export const IQD = ({ answers, title, labels }) => {
+export const IQD = ({ answers, title, labels, text }) => {
   if (!Array.isArray(answers) || answers.length === 0) {
     console.error("Invalid answers data");
     return null;
@@ -79,7 +79,7 @@ export const IQD = ({ answers, title, labels }) => {
       x: {
         title: {
           display: true,
-          text: 'Твердження',
+          text: text,
         },
         ticks: {
           autoSkip: false,

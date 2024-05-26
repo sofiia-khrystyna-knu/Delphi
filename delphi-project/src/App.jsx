@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import { Stacked } from './components/firstRound/Stacked';
-import { dataset, datasetRec } from './components/datasets';
-import { statements, recomendations } from '../../answers';
-import { IQD } from './components/firstRound/IQD';
+import { Stacked } from './components/Stacked';
+import { dataset1, dataset2, datasetRec } from './components/datasets';
+import { statements1, recomendations1, statements2, recomendations2 } from '../../answers';
+import { IQD } from './components/IQD';
 
 function App() {
   return (
@@ -11,22 +11,22 @@ function App() {
       <h1>Аналіз та реалізація методу Делфі</h1>
       <h2>Перший раунд</h2>
       <div className="chart-container">
-        <Stacked data={dataset} title={'Твердження'} />
-        <IQD answers={statements} title={'IQD Твердження'} labels={dataset.labels}/>
+        <Stacked data={dataset1} title={'Твердження'} text={'Порядковий номер твердження'}/>
+        <IQD answers={statements1} title={'IQD Твердження'} labels={dataset1.labels} text={'Порядковий номер твердження'}/>
       </div>
       <div className="chart-container">
-        <Stacked data={datasetRec} title={'Рекомендації'} />
-        <IQD answers={recomendations} title={'IQD Рекомендації'} labels={datasetRec.labels}/>
+        <Stacked data={datasetRec} title={'Рекомендації'} text={'Порядковий номер рекомендації'} labels={datasetRec.labels}/>
+        <IQD answers={recomendations1} title={'IQD Рекомендації'} labels={datasetRec.labels} text={'Порядковий номер рекомендації'}/>
       </div>
-      {/* ще не зроблено */}
+      
       <h2>Другий раунд</h2>
       <div className="chart-container">
-        <Stacked data={dataset} title={'Твердження'} />
-        <Stacked data={datasetRec} title={'IQD Твердження'} />
+        <Stacked data={dataset2} title={'Твердження'} text={'Порядковий номер твердження'}/>
+        <IQD answers={statements2} title={'IQD Твердження'} labels={dataset1.labels} text={'Порядковий номер твердження'}/>
       </div>
       <div className="chart-container">
-        <Stacked data={datasetRec} title={'Рекомендації'} />
-        <Stacked data={datasetRec} title={'IQD Рекомендації'} />
+        <Stacked data={datasetRec} title={'Рекомендації'} text={'Порядковий номер рекомендації'} labels={datasetRec.labels}/>
+        <IQD answers={recomendations2} title={'IQD Рекомендації'} labels={datasetRec.labels} text={'Порядковий номер рекомендації'}/>
       </div>
     </div>
   );
