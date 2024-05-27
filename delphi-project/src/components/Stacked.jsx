@@ -2,7 +2,6 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, PointElement, Title, Tooltip, Legend } from 'chart.js';
 
-// Register the necessary components with ChartJS
 ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, Title, Tooltip, Legend);
 
 export const Stacked = ({ data, title, text }) => {
@@ -66,14 +65,14 @@ export const Stacked = ({ data, title, text }) => {
 
   if (data) {
     return (
-      <div style={{ width: '600px', height: '400px', border: '1px solid red' }}>
+      <div style={{ width: '600px', height: '400px'}}>
         <Bar data={data} options={options} />
       </div>
     )
   }
   else if (data) {
     return (
-      <div style={{ width: '600px', height: '400px', border: '1px solid red' }}>
+      <div style={{ width: '600px', height: '400px'}}>
         <Bar data={data} options={options} />
       </div>
     )

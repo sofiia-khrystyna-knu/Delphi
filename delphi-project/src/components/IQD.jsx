@@ -108,14 +108,14 @@ export const IQD = ({ answers, title, labels, text }) => {
 
   if (answers) {
     return (
-      <div style={{ width: '600px', height: '400px', border: '1px solid red' }}>
+      <div style={{ width: '600px', height: '400px'}}>
         <Bar data={chartData} options={options} />
       </div>
     )
   }
   else if (answers) {
     return (
-      <div style={{ width: '600px', height: '400px', border: '1px solid red' }}>
+      <div style={{ width: '600px', height: '400px'}}>
         <Bar data={chartData} options={options} />
       </div>
     )
