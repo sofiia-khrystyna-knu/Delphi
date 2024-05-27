@@ -8,7 +8,7 @@ import { IQD } from './components/IQD';
 function App() {
   return (
     <div className="app-container">
-      <h1>Аналіз та реалізація методу Делфі</h1>
+      <h1>Аналіз та реалізація методу Дельфі</h1>
       <h2>Перший раунд</h2>
       <div className="chart-container">
         <Stacked data={dataset1} title={'Твердження'} text={'Порядковий номер твердження'}/>
